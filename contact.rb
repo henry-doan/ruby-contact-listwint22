@@ -14,7 +14,8 @@
     # save the user input to a variable , need a variable for each attr
     # create a new contact with the variables in a object add to our collection
   # 2) View All Contacts 
-    # go through the collection one by one 
+    # go through the collection/ arr one by one 
+
     # display them in a reable way 
   # 3) Exit
     # say a good msg 
@@ -81,7 +82,17 @@ def create_contact
 end
 
 def display_contacts
+  # contact = { name: 'bob', email: 'bob@email.com', phone: '123-123-1233' },
 
+  @contacts.each do |contact|
+    puts "--------"
+    puts "Name: #{contact[:name]}"
+    puts "Email: #{contact[:email]}"
+    puts "Phone: #{contact[:phone]}"
+    puts 
+  end
+
+  main_menu
 end
 
 welcome
