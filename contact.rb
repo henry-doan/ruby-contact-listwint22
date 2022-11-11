@@ -24,5 +24,10 @@
   # recursion, calling a method within itself 
 
   # a way to store all contacts 
+  contacts = [
+    # what does a contact have, attr? 
+    { name: 'bob', email: 'bob@email.com', phone: '123-123-1233' },
+    { name: 'sue', email: 'sue@email.com', phone: '123-123-3333' },
+    { name: 'jack', email: 'jack@email.com', phone: '123-123-1111' }
+  ]
 
-  # what does a contact have, attr? 
