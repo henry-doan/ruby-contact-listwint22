@@ -31,3 +31,42 @@
     { name: 'jack', email: 'jack@email.com', phone: '123-123-1111' }
   ]
 
+def welcome
+  puts "Hello welcome to the contact list"
+end
+
+def main_menu
+  puts "Main menu"
+  puts "1) Create a contact"
+  puts "2) View All Contacts"
+  puts "3) Exit"
+  puts "What do you want to do?"
+  user_input = gets.strip.to_i
+  # p user_input
+  # "1\n"
+  # 1
+  if user_input == 1
+    puts "Create contact"
+    create_contact
+  elsif user_input == 2
+    puts "View All Contacts"
+    display_contacts
+  elsif user_input == 3
+    puts "Good bye"
+    exit 
+  else 
+    puts "Error you need to type 1, 2, or 3"
+    main_menu
+  end
+end
+
+def create_contact
+
+end
+
+def display_contacts
+
+end
+
+welcome
+main_menu
