@@ -24,7 +24,7 @@
   # recursion, calling a method within itself 
 
   # a way to store all contacts 
-  contacts = [
+  @contacts = [
     # what does a contact have, attr? 
     { name: 'bob', email: 'bob@email.com', phone: '123-123-1233' },
     { name: 'sue', email: 'sue@email.com', phone: '123-123-3333' },
@@ -61,7 +61,23 @@ def main_menu
 end
 
 def create_contact
+  puts "What is the new contacts name?"
+  name_input = gets.strip
+  puts "What is the new contacts email?"
+  email_input = gets.strip
+  puts "What is the new contacts phone?"
+  phone_input = gets.strip
 
+  # p name_input
+  # p email_input
+  # p phone_input
+  new_contact = { name: name_input, email: email_input, phone: phone_input }
+
+  @contacts << new_contact
+
+  # p @contacts
+
+  main_menu
 end
 
 def display_contacts
